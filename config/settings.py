@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/6.1/ref/settings/
 """
 import os
 
-from django.conf.global_settings import AUTH_USER_MODEL
+from django.conf.global_settings import AUTH_USER_MODEL, MEDIA_URL, MEDIA_ROOT
 from dotenv import load_dotenv
 from pathlib import Path
 
@@ -129,6 +129,9 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+# Media files storage
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR/'media'
 
 # Email
 # https://docs.djangoproject.com/en/6.1/topics/email/#topic-email-configuration
