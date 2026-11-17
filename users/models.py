@@ -66,8 +66,8 @@ class Payments(models.Model):
     )
 
     payed_sum = models.DecimalField(
-        max_digits=2,
-        decimal_places=...,
+        max_digits=9,
+        decimal_places=2,
         null=False,
         blank=False,
         verbose_name='Сумма оплаты'
