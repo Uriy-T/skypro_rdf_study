@@ -1,0 +1,112 @@
+[
+  {
+    "model": "courses.lessonmodel",
+    "pk": 1,
+    "fields": {
+      "lesson_title": "Знакомство с интерфейсом",
+      "description": "Пройдемся по основным разделам интерфейса, чтобы знать, где что лежит.",
+      "lesson_preview": "lessons/previews/blender.jpg",
+      "video_link": "https://rutube.ru/video/076ffa492d888e8af0963400bc06cc61/",
+      "course_bind": 1
+    }
+  },
+  {
+    "model": "courses.lessonmodel",
+    "pk": 2,
+    "fields": {
+      "lesson_title": "Базовые трансформации объектов",
+      "description": "Научимся перемещать, вращать и масштабировать 3D-объекты.",
+      "lesson_preview": "lessons/previews/blender.jpg",
+      "video_link": "https://rutube.ru/video/076ffa492d888e8af0963400bc06cc61/",
+      "course_bind": 1
+    }
+  },
+  {
+    "model": "courses.lessonmodel",
+    "pk": 3,
+    "fields": {
+      "lesson_title": "Введение в цифровой скульптинг",
+      "description": "Разберемся с кистями и научимся создавать базовые формы.",
+      "lesson_preview": "lessons/previews/zbrush.jpg",
+      "video_link": "https://rutube.ru/video/076ffa492d888e8af0963400bc06cc61/",
+      "course_bind": 2
+    }
+  },
+  {
+    "model": "courses.lessonmodel",
+    "pk": 4,
+    "fields": {
+      "lesson_title": "Создание детализированной головы персонажа",
+      "description": "Пошаговый процесс лепки головы с использованием различных кистей.",
+      "lesson_preview": "lessons/previews/zbrush.jpg",
+      "video_link": "https://rutube.ru/video/076ffa492d888e8af0963400bc06cc61/",
+      "course_bind": 2
+    }
+  },
+  {
+    "model": "courses.lessonmodel",
+    "pk": 5,
+    "fields": {
+      "lesson_title": "Основы PBR-текстурирования",
+      "description": "Что такое Physically Based Rendering и как с ним работать.",
+      "lesson_preview": "lessons/previews/substance.jpg",
+      "video_link": "https://rutube.ru/video/076ffa492d888e8af0963400bc06cc61/",
+      "course_bind": 3
+    }
+  },
+  {
+    "model": "courses.lessonmodel",
+    "pk": 6,
+    "fields": {
+      "lesson_title": "Экспорт материалов в Unreal Engine",
+      "description": "Как правильно сохранить текстуры и перенести их в игровой движок.",
+      "lesson_preview": "lessons/previews/substance.jpg",
+      "video_link": "https://rutube.ru/video/076ffa492d888e8af0963400bc06cc61/",
+      "course_bind": 3
+    }
+  },
+  {
+    "model": "courses.lessonmodel",
+    "pk": 7,
+    "fields": {
+      "lesson_title": "Создание ландшафта",
+      "description": "Использование инструментов Landscape для создания реалистичной местности.",
+      "lesson_preview": "lessons/previews/unreal.jpg",
+      "video_link": "https://rutube.ru/video/076ffa492d888e8af0963400bc06cc61/",
+      "course_bind": 4
+    }
+  },
+  {
+    "model": "courses.lessonmodel",
+    "pk": 8,
+    "fields": {
+      "lesson_title": "Настройка освещения и Lumen",
+      "description": "Работа с динамическим глобальным освещением в UE5.",
+      "lesson_preview": "lessons/previews/unreal.jpg",
+      "video_link": "https://rutube.ru/video/076ffa492d888e8af0963400bc06cc61/",
+      "course_bind": 4
+    }
+  },
+  {
+    "model": "courses.lessonmodel",
+    "pk": 9,
+    "fields": {
+      "lesson_title": "Введение в процедурную генерацию",
+      "description": "Знакомство с нодовой системой Houdini.",
+      "lesson_preview": "lessons/previews/houdini.jpg",
+      "video_link": "https://rutube.ru/video/076ffa492d888e8af0963400bc06cc61/",
+      "course_bind": 5
+    }
+  },
+  {
+    "model": "courses.lessonmodel",
+    "pk": 10,
+    "fields": {
+      "lesson_title": "Создание эффекта взрыва",
+      "description": "Симуляция разрушения и дыма с помощью встроенных солверов.",
+      "lesson_preview": "lessons/previews/houdini.jpg",
+      "video_link": "https://rutube.ru/video/076ffa492d888e8af0963400bc06cc61/",
+      "course_bind": 5
+    }
+  }
+]

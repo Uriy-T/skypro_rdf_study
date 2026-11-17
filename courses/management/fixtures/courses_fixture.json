@@ -1,0 +1,47 @@
+[
+{
+    "model": "courses.coursemodel",
+    "pk": 1,
+    "fields": {
+        "course_title": "Blender для начинающих",
+        "course_preview": "courses/previews/blender.jpg",
+        "description": "Освойте основы 3D-моделирования, текстурирования и рендеринга в одном из самых мощных бесплатных редакторов."
+    }
+},
+{
+    "model": "courses.coursemodel",
+    "pk": 2,
+    "fields": {
+        "course_title": "Скульптинг в Z-Brush",
+        "course_preview": "courses/previews/zbrush.jpg",
+        "description": "От простых форм до сложных детализированных персонажей. Изучите профессиональный инструмент цифрового скульптинга."
+    }
+},
+{
+    "model": "courses.coursemodel",
+    "pk": 3,
+    "fields": {
+        "course_title": "Текстурирование в Substance Painter",
+        "course_preview": "courses/previews/substance.jpg",
+        "description": "Создавайте фотореалистичные PBR-текстуры и материалы для ваших 3D-моделей в индустриальном стандарте."
+    }
+},
+{
+    "model": "courses.coursemodel",
+    "pk": 4,
+    "fields": {
+        "course_title": "Unreal Engine 5: Создание уровней",
+        "course_preview": "courses/previews/unreal.jpg",
+        "description": "Погрузитесь в мир геймдева. Научитесь создавать захватывающие окружения и освещение в реальном времени с помощью UE5."
+    }
+},
+{
+    "model": "courses.coursemodel",
+    "pk": 5,
+    "fields": {
+        "course_title": "Процедурная генерация в Houdini",
+        "course_preview": "courses/previews/houdini.jpg",
+        "description": "Изучите нодовый подход к созданию сложных эффектов (VFX), симуляций и процедурных моделей."
+    }
+}
+]
