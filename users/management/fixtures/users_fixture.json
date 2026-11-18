@@ -1,0 +1,40 @@
+[
+  {
+    "model": "users.mainuser",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$1200000$mY0zYnQ4dUZ3cjVq$2v7GZ3Z5y4Z1x3Z1x3Z1x3Z1x3Z1x3Z1x3Z1x3Z1x3=",
+      "last_login": null,
+      "is_superuser": true,
+      "username": "st_super_user_django",
+      "first_name": "",
+      "last_name": "",
+      "email": "admin@example.com",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2023-10-01T12:00:00Z",
+      "phone_number": "+79991234567",
+      "city": "Москва",
+      "avatar": ""
+    }
+  },
+  {
+    "model": "users.mainuser",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$870000$MyL8yM2Z1wO4jXk2$8R4qB...",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "test_user",
+      "first_name": "",
+      "last_name": "",
+      "email": "user@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2023-10-01T12:00:00Z",
+      "phone_number": "",
+      "city": "Санкт-Петербург",
+      "avatar": ""
+    }
+  }
+]
