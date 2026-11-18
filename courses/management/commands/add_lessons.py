@@ -15,7 +15,7 @@ def fixture_reader(path_to_fixture: Path) -> dict[str: Any]:
 
 
 class Command(BaseCommand):
-    help = 'Очищает таблицу courses_courses и заполняет стартовым набором тестовых данных'
+    help = 'Очищает таблицу courses_lessonmodel и заполняет стартовым набором тестовых данных'
 
     def handle(self, *args, **kwargs):
         LessonModel.objects.all().delete()
