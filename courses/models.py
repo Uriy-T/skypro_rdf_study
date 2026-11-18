@@ -53,3 +53,10 @@ class LessonModel(models.Model):
         related_name='lessons',
         verbose_name='Курс'
     )
+
+    def __str__(self):
+        return self.lesson_title
+
+    class Meta:
+        verbose_name = 'Урок'
+        verbose_name_plural = 'Уроки'

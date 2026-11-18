@@ -1,0 +1,122 @@
+[
+  {
+    "model": "users.payments",
+    "pk": 1,
+    "fields": {
+      "user": 2,
+      "payed_course": 1,
+      "payed_lesson": null,
+      "payed_sum": "4990.00",
+      "payment_type": "transfer",
+      "payment_date": "2021-03-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "users.payments",
+    "pk": 2,
+    "fields": {
+      "user": 2,
+      "payed_course": 2,
+      "payed_lesson": null,
+      "payed_sum": "5990.00",
+      "payment_type": "cash",
+      "payment_date": "2022-07-20T14:30:00Z"
+    }
+  },
+  {
+    "model": "users.payments",
+    "pk": 3,
+    "fields": {
+      "user": 2,
+      "payed_course": 3,
+      "payed_lesson": null,
+      "payed_sum": "4500.00",
+      "payment_type": "transfer",
+      "payment_date": "2023-11-05T09:15:00Z"
+    }
+  },
+  {
+    "model": "users.payments",
+    "pk": 4,
+    "fields": {
+      "user": 2,
+      "payed_course": 4,
+      "payed_lesson": null,
+      "payed_sum": "7000.00",
+      "payment_type": "cash",
+      "payment_date": "2024-01-25T16:45:00Z"
+    }
+  },
+  {
+    "model": "users.payments",
+    "pk": 5,
+    "fields": {
+      "user": 2,
+      "payed_course": 5,
+      "payed_lesson": null,
+      "payed_sum": "8500.00",
+      "payment_type": "transfer",
+      "payment_date": "2025-05-10T11:00:00Z"
+    }
+  },
+  {
+    "model": "users.payments",
+    "pk": 6,
+    "fields": {
+      "user": 2,
+      "payed_course": null,
+      "payed_lesson": 1,
+      "payed_sum": "990.00",
+      "payment_type": "transfer",
+      "payment_date": "2021-09-12T18:20:00Z"
+    }
+  },
+  {
+    "model": "users.payments",
+    "pk": 7,
+    "fields": {
+      "user": 2,
+      "payed_course": null,
+      "payed_lesson": 3,
+      "payed_sum": "1200.00",
+      "payment_type": "cash",
+      "payment_date": "2022-12-01T13:10:00Z"
+    }
+  },
+  {
+    "model": "users.payments",
+    "pk": 8,
+    "fields": {
+      "user": 2,
+      "payed_course": null,
+      "payed_lesson": 5,
+      "payed_sum": "1500.00",
+      "payment_type": "transfer",
+      "payment_date": "2023-04-18T10:05:00Z"
+    }
+  },
+  {
+    "model": "users.payments",
+    "pk": 9,
+    "fields": {
+      "user": 2,
+      "payed_course": null,
+      "payed_lesson": 7,
+      "payed_sum": "800.00",
+      "payment_type": "cash",
+      "payment_date": "2024-08-22T15:30:00Z"
+    }
+  },
+  {
+    "model": "users.payments",
+    "pk": 10,
+    "fields": {
+      "user": 2,
+      "payed_course": null,
+      "payed_lesson": 9,
+      "payed_sum": "1100.00",
+      "payment_type": "transfer",
+      "payment_date": "2025-10-05T12:00:00Z"
+    }
+  }
+]
