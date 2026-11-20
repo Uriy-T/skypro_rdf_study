@@ -1,6 +1,9 @@
 from django.urls import path
 from users.apps import UsersConfig
-
+from rest_framework_simplejwt.views import (
+    TokenObtainPairView,
+    TokenRefreshView
+)
 from users.views import (CreateUserAPIView,
                          ListUserAPIView,
                          SingleUserAPIView,
@@ -18,6 +21,11 @@ urlpatterns = [
     path('user/update/<int:pk>/', UpdateUserAPIView.as_view(), name='update_user'),
     path('user/delete/<int:pk>/', DeleteUserAPIView.as_view(), name='delete_user'),
 
-    #Payments operations
-    path('payment/list/', UserPaymentsListAPI.as_view(), name='list_payments')
+    # Payments operations
+    path('payment/list/', UserPaymentsListAPI.as_view(), name='list_payments'),
+
+    # Tokens operations
+    path('token/', TokenObtainPairView.as_view(), name='receive_token'),
+    path('token/refresh', TokenRefreshView.as_view(), name='refresh_token')
+
 ]
