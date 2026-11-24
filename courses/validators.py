@@ -2,7 +2,9 @@ from rest_framework.serializers import ValidationError
 from configuration import VIDEO_LINK
 
 class VideoLinkValidator:
-
+    """
+    Валидатор для проверки поля video_link модели LessonsModel.
+    """
     def __init__(self, field):
         self.field = field
 
