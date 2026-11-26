@@ -3,11 +3,12 @@ from rest_framework.filters import OrderingFilter
 from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework.permissions import AllowAny
 
-from users.models import MainUser, Payments
+from users.models import MainUser, Payments, Subscription
 from users.serializers import (UsersRetrieveSerializer,
                                UsersCreateSerializer,
                                UsersUpdateSerializer,
-                               PaymentsSerializer)
+                               PaymentsSerializer,
+                               SubscriptionSerializer)
 
 
 # Users CRUD________________
@@ -105,3 +106,26 @@ class DeletePaymentAPIView(generics.DestroyAPIView):
     """
 
     queryset = Payments.objects.all()
+
+
+# Subscription CRUD________________
+
+class CreateSubscriptionAPIView(generics.CreateAPIView):
+    """
+    Установка подписки на курс
+    """
+    serializer_class = SubscriptionSerializer
+    queryset = Subscription.objects.all()
+
+    def perform_create(self, serializer):
+        serializer.save(user=self.request.user)
+
+
+class DeleteSubscriptionAPIView(generics.DestroyAPIView):
+    """
+    Снятие подписки на курс
+    """
+    queryset = Subscription.objects.all()
+
+    def get_queryset(self):
+        return Subscription.objects.filter(user=self.request.user)
