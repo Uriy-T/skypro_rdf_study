@@ -4,6 +4,9 @@ from courses.models import CourseModel, LessonModel
 
 
 class MainUser(AbstractUser):
+    """
+    Модель пользователя.
+    """
     email = models.EmailField(
         unique=True,
         verbose_name='Электронная почта'
@@ -33,6 +36,10 @@ class MainUser(AbstractUser):
 
 
 class Payments(models.Model):
+    """
+    Модель платежей за курсы и уроки.
+    """
+
     class PaymentTypes(models.TextChoices):
         TRANSFER = 'transfer', 'перевод'
         CASH = 'cash', 'наличные'
@@ -91,3 +98,33 @@ class Payments(models.Model):
         verbose_name = 'Оплата'
         verbose_name_plural = 'Оплаты'
         ordering = ['-payment_date']
+
+
+class Subscription(models.Model):
+    """
+    Модель подписок на курсы.
+    """
+    user = models.ForeignKey(MainUser,
+                             on_delete=models.CASCADE,
+                             related_name='subscriptions',
+                             verbose_name='Пользователь')
+
+    course = models.ForeignKey(CourseModel,
+                                            on_delete=models.CASCADE,
+                                            related_name='subscribers',
+                                            verbose_name='Подписчики')
+
+    def __str__(self):
+        return f'{self.user.username} -> {self.course.course_title}'
+
+    class Meta:
+
+        verbose_name = 'Подписка'
+        verbose_name_plural = 'Подписки'
+        constraints = [
+            models.UniqueConstraint(
+                fields=['user', 'course'],
+                name='unique_user_course_subscription'
+            )
+        ]
+
