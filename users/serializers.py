@@ -1,9 +1,8 @@
-from os import write
-
 from django.contrib.auth.hashers import make_password
+from rest_framework.exceptions import ValidationError
 from rest_framework.serializers import ModelSerializer
 
-from users.models import MainUser, Payments
+from users.models import MainUser, Payments, Subscription
 
 
 class PaymentsSerializer(ModelSerializer):
@@ -108,3 +107,24 @@ class UsersUpdateSerializer(ModelSerializer):
     def validate_password(self, value):
         return make_password(value)
 
+
+class SubscriptionSerializer(ModelSerializer):
+    """
+    Сериализатор объектов подписки на курсы
+    """
+
+    class Meta:
+        model = Subscription
+        fields = ['id', 'user', 'course']
+        read_only_fields = ['user']
+
+    def validate(self, attrs):
+        user = self.context['request'].user
+        course = attrs.get('course')
+
+        if Subscription.objects.filter(user=user, course=course).exists():
+            raise ValidationError(
+                {"course": "Вы уже подписаны на этот курс."}
+            )
+
+        return attrs
