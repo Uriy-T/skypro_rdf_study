@@ -9,7 +9,9 @@ from users.views import (CreateUserAPIView,
                          SingleUserAPIView,
                          UpdateUserAPIView,
                          DeleteUserAPIView,
-                         UserPaymentsListAPI)
+                         UserPaymentsListAPI,
+                         CreateSubscriptionAPIView,
+                         DeleteSubscriptionAPIView)
 
 app_name = UsersConfig.name
 
@@ -26,6 +28,10 @@ urlpatterns = [
 
     # Tokens operations
     path('token/', TokenObtainPairView.as_view(), name='receive_token'),
-    path('token/refresh', TokenRefreshView.as_view(), name='refresh_token')
+    path('token/refresh', TokenRefreshView.as_view(), name='refresh_token'),
+
+    # Subscription operations
+    path('subscription/create', CreateSubscriptionAPIView.as_view(), name='create_subscription'),
+    path('subscription/delete', DeleteSubscriptionAPIView.as_view(), name='delete_subscription'),
 
 ]
